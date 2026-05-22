@@ -1,66 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<title>FluxCraft Store</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{
-background:linear-gradient(to bottom,#220000,#000000);
-color:white;
-font-family:Arial;
-text-align:center;
-padding:30px;
-}
-.box{
-background:#111;
-border:2px solid #aa0000;
-padding:20px;
-border-radius:20px;
-margin:15px;
-}
-.button{
-display:inline-block;
-padding:12px 20px;
-background:#cc0000;
-color:white;
-text-decoration:none;
-border-radius:15px;
-font-weight:bold;
-}
-h1{
-color:#ff2d2d;
-font-size:45px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FluxCraft Store</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: white;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff0000, #000000);
+      padding: 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 3px;
+    }
+
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://images.unsplash.com/photo-1610312278520-117f2c8b4f3d') center/cover;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 15px;
+      border-left: 5px solid red;
+      padding-left: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #151515;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #ff0000;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      margin-top: 40px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>𝐅𝐋𝐔𝐗𝐂𝐑𝐀𝐅𝐓</h1>
+<header>
+  <h1>𝐅𝐋𝐔𝐗𝐂𝐑𝐀𝐅𝐓</h1>
+</header>
 
-<p>sᴇᴍɪ • ᴀɴᴀʀǫᴜɪᴀ • ʙᴇᴅʀᴏᴄᴋ</p>
+<nav>
+  <a href="#loja">Loja</a>
+  <a href="#kits">Kits</a>
+  <a href="#ranks">Ranks</a>
+  <a href="#discord">Discord</a>
+</nav>
 
-<div class="box">
-<h2>⚔ Sobreviva ao caos</h2>
-<p>Aqui confiança custa caro.</p>
+<div class="hero">
+  <h2>Bem-vindo ao FluxCraft</h2>
+  <p>O servidor semi-anarquia mais intenso do Minecraft Bedrock</p>
 </div>
 
-<div class="box">
-<h2>👑 VIPS</h2>
-<p>Ranks, kits e benefícios especiais</p>
+<div class="container">
+
+  <h2 class="section-title">Sobre o servidor</h2>
+  <p>
+    FluxCraft é um servidor de semi-anarquia onde você cria sua história,
+    forma alianças, conquista poder e domina o mundo.
+  </p>
+
+  <h2 class="section-title" id="loja">Loja</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Kit Iniciante</h3>
+      <p>Itens básicos para começar sua jornada.</p>
+      <a class="btn" href="#">Comprar</a>
+    </div>
+
+    <div class="card">
+      <h3>Kit Guerreiro</h3>
+      <p>Armadura e armas reforçadas.</p>
+      <a class="btn" href="#">Comprar</a>
+    </div>
+
+    <div class="card">
+      <h3>Kit Elite</h3>
+      <p>Equipamentos raros e vantagem no PvP.</p>
+      <a class="btn" href="#">Comprar</a>
+    </div>
+
+  </div>
+
+  <h2 class="section-title" id="ranks">Ranks</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>VIP</h3>
+      <p>Benefícios exclusivos dentro do servidor.</p>
+      <a class="btn" href="#">Adquirir</a>
+    </div>
+
+    <div class="card">
+      <h3>ELITE</h3>
+      <p>Mais poderes e destaque no servidor.</p>
+      <a class="btn" href="#">Adquirir</a>
+    </div>
+
+  </div>
+
+  <h2 class="section-title" id="discord">Discord</h2>
+  <div class="card">
+    <p>Entre na comunidade oficial do FluxCraft.</p>
+    <a class="btn" href="#">Entrar no Discord</a>
+  </div>
+
 </div>
 
-<div class="box">
-<h2>🎁 KITS</h2>
-<p>Equipe-se para dominar o servidor</p>
-</div>
-
-<div class="box">
-<h2>📱 Discord</h2>
-<a class="button" href="https://discord.gg/f8hd9F6pC">
-ENTRAR
-</a>
-</div>
+<footer>
+  © 2026 FluxCraft - Todos os direitos reservados
+</footer>
 
 </body>
 </html>
